@@ -1,43 +1,38 @@
 import Image from "next/image";
+import Link from "next/link";
 import Asad from "@/public/Asad.jpg";
-import Typeanimation from "./components/TypeAnimation";
-import Guestbook from "./guestbook/page";
-import Expertise from "./expertise/page";
-import Projects from "./projects/page";
+import React from "react";
+import { BsYoutube } from "react-icons/bs";
+import Typeanimation from "./TypeAnimation";
 
-
-export default function Home() {
+const Footer = () => {
   return (
-    <div >
-      <div className="divide-y divide-gray-100 dark:divide-gray-700">
-        <div className="space-y-2 pt-5 pb-8 md:space-x-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-13">
-            Home
-          </h1>
-        </div>
-
-        <div className="items-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center pt-8">
-            <Image
+    
+    <div className="bg-gray-400 ">
+      <footer className="text-gray-600 body-font">
+        <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 ">
+          <Image
               src={Asad}
               alt="Syed Asad Raza"
-              className="h-48 w-48 rounded-full object-cover  object-center"
+              className="lg:h-32 lg:w-32 h-16 w-16 rounded-full object-cover object-center"
             />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-              Syed Asad Raza
-            </h3>
-            <p className="text-gray-800 dark:text-gray-300 text-center font-medium ml-5">
-              <Typeanimation />
-             
-            </p>
+            <span className="ml-3 text-xl md:text-2xl">Syed <span className="text-teal-700">Asad</span> Raza</span>
+          </a>
+          <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+            © 2024 Portfolio
+          </p>
+            
+          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            
 
-            <div className="flex space-x-4 pt-6">
+          <div className="flex space-x-6 ">
               <a href="https://wa.me/message/FRMALZFPE62XB1" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  className="w-8 h-8"
+                  className="lg:size-10 lg:hover:size-12 md:size-8 md:hover:size-10 size-6 transition-all"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -72,7 +67,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  className="w-8 h-8"
+                  className="lg:size-10 lg:hover:size-12 md:size-8 md:hover:size-10 size-6 transition-all"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -90,7 +85,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  className="w-8 h-8"
+                  className="lg:size-10 lg:hover:size-12 md:size-8 md:hover:size-10 size-6 transition-all"
                   viewBox="0 0 48 48"
                 >
                   <linearGradient
@@ -127,7 +122,7 @@ export default function Home() {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  className="w-8 h-8"
+                  className="lg:size-10 lg:hover:size-12 md:size-8 md:hover:size-10 size-6 transition-all"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -153,43 +148,13 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-          </div>
-
-          <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert xl:col-span-2">
-            <p>
-              Hey everyone my name is Syed Asad Raza, I am 21 years old and i am
-              a Full Stack developer based in Karachi/Pakistan.
-            </p>
-            <p>
-              I love building Full Stack Web Applications with React & Next.js.
-              When I discovered React, I was blown away by its interactivity and
-              speed. Its virtual DOM and efficient rendering mechanisms allowed
-              me to create dynamic user interfaces that responded to user
-              actions in real-time.
-            </p>
-            <p>
-              I'm a Python enthusiast dedicated to crafting elegant solutions
-              and proficient in UI/UX design. My passion lies in leveraging
-              Python's versatility to develop robust applications. Whether it's
-              data analysis, web development, or automation, I bring a dynamic
-              approach to Python programming. Additionally, my expertise in
-              UI/UX design, along with proficiency in Tailwind CSS and
-              TypeScript, allows me to create visually appealing and functional
-              interfaces. With a commitment to excellence and innovation, I
-              strive to deliver seamless experiences in every project.
-            </p>
-          </div>
+          </span>
         </div>
-      </div>
-      <div className="container px-5 py-40 mx-auto">
-      <Expertise />
-      </div>
-      <div className="container px-5 py-24 mx-auto">
-      <Projects />
-      </div>
-      <div className="container px-5 py-40 mx-auto">
-      <Guestbook />
-      </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default Footer;
+
+      
