@@ -6,6 +6,8 @@ import Expertise from "./expertise/page";
 import Projects from "./projects/page";
 
 
+export const revalidate = 5;
+
 export default function Home() {
   return (
     <div >
