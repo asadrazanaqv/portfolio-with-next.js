@@ -184,9 +184,7 @@ export default function Home() {
       <div className="container px-5 py-40 mx-auto">
       <Expertise />
       </div>
-      <div className="container px-5 py-24 mx-auto">
       <Projects />
-      </div>
       <div className="container px-5 py-40 mx-auto">
       <Guestbook />
       </div>
