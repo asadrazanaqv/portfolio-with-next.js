@@ -16,7 +16,7 @@ export default function Navbar() {
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
                   <Link href="/">
-                    <h1 className="font-medium ml-1 text-lg md:text-2xl md:ml-3">
+                    <h1 className="font-bold ml-1 text-lg md:text-2xl md:ml-3">
                       Syed <span className="text-teal-500">Asad</span> Raza
                     </h1>
                   </Link>
